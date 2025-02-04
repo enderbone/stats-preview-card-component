@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./style.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      height: 100dvh;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center bg-mainbg text-main">
+
+  <main class="flex flex-row justify-between rounded-lg mt-10 bg-cardbg">
+    <section class="flex flex-col items-center text-white w-maxh1 ml-20 mr-20">
+      <h1 class="w-full max-w-maxh1 text-4xl font-bold mt-10 mb-10">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+      <p class="w-full max-w-maxp text-base text-mainp mb-20">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+      </p>
+      <section class="container flex flex-row justify-around text-2xl font-bold leading-7">
+        <div>10k+<br><span class="text-statheading text-sm font-beca font-normal">COMPANIES</span></div>
+        <div>314<br><span class="text-statheading text-sm font-beca font-normal">TEMPLATES</span></div>
+        <div>12M+<br><span class="text-statheading text-sm font-beca font-normal">QUERIES</span></div>
+      </section>
+      
+    </section>
+
+    <!-- <div class="h-himg w-wimg"> -->
+      <img class="rounded-r-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+      <!-- <div class="w-fit h-fit bg-accent z-10"></div>
+    </div> -->
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>

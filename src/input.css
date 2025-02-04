@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+@theme {
+    /* Primary Color*/
+    --color-accent: hsl(277, 64%, 61%);
+    --color-cardbg: hsl(244, 38%, 16%);
+    --color-mainbg: hsl(233, 47%, 7%);
+
+    /* Neutral Color*/
+    --color-mainp: hsla(0, 0%, 100%, 0.75);
+    --color-statheading: hsla(0, 0%, 100%, 0.6);
+
+    /* Text */
+    --text-main: 15px;
+
+    /* Font */
+    --font-deca: 'Lexend Deca';
+    --font-inter: 'Inter';
+
+    --spacing-maxh1: 375px; 
+    /* --spacing-minh1: min-width: 250px; */
+    --spacing-maxp: 350px;
+    --spacing-wimg: 540px;
+    --spacing-himg: 446px;
+}
