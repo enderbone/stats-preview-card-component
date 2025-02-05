@@ -18,9 +18,13 @@
     --font-deca: 'Lexend Deca';
     --font-inter: 'Inter';
 
+    /* Spacing */
     --spacing-maxh1: 375px; 
-    /* --spacing-minh1: min-width: 250px; */
     --spacing-maxp: 350px;
     --spacing-wimg: 540px;
     --spacing-himg: 446px;
+    --spacing-45: 80%;
+    --spaccing-90: 90%;
+    /* Brs */
+    --breakpoint-lg2: 1100px;
 }

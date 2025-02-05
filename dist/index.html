@@ -19,15 +19,16 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center bg-mainbg text-main">
+<body class="flex flex-col items-center justify-center bg-mainbg text-main max-lg2:mt-80"> 
+  <!-- Deve ter jeito melhor de fazer o topo aaparecer sem usar margem-->
 
-  <main class="flex flex-row justify-between rounded-lg mt-10 bg-cardbg">
-    <section class="flex flex-col items-center text-white w-maxh1 ml-20 mr-20">
-      <h1 class="w-full max-w-maxh1 text-4xl font-bold mt-10 mb-10">Get <span class="text-accent">insights</span> that help your business grow.</h1>
-      <p class="w-full max-w-maxp text-base text-mainp mb-20">
+  <main class="flex flex-row justify-between rounded-lg bg-cardbg max-lg2:h-dvh max-lg2:flex-col-reverse max-lg2:items-center max-lg2:w-45">
+    <section class="flex flex-col items-center text-white w-maxh1 ml-20 mr-20 max-lg2:w-90 max-lg2:text-center max-lg2:m-0">
+      <h1 class="w-full max-w-maxh1 text-4xl font-bold mt-10 mb-10 max-lg2:w-90 max-lg2:">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+      <p class="w-full max-w-maxp text-base text-mainp max-lg2:mb-0 mb-20 max-lg2:w-90 ">
         Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
       </p>
-      <section class="container flex flex-row justify-around text-2xl font-bold leading-7">
+      <section class="container flex flex-row justify-around text-2xl font-bold leading-7 max-lg2:flex-col">
         <div>10k+<br><span class="text-statheading text-sm font-beca font-normal">COMPANIES</span></div>
         <div>314<br><span class="text-statheading text-sm font-beca font-normal">TEMPLATES</span></div>
         <div>12M+<br><span class="text-statheading text-sm font-beca font-normal">QUERIES</span></div>
@@ -36,7 +37,7 @@
     </section>
 
     <!-- <div class="h-himg w-wimg"> -->
-      <img class="rounded-r-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+      <img class="rounded-r-lg max-lg2:rounded-br-none max-lg2:rounded-t-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
       <!-- <div class="w-fit h-fit bg-accent z-10"></div>
     </div> -->
   </main>
