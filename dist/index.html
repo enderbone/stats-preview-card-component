@@ -21,7 +21,7 @@
 </head>
 <body class="flex flex-col items-center justify-center overflow-y-auto bg-mainbg text-main"> 
 
-  <main class="flex flex-row justify-between rounded-lg bg-cardbg max-sm:flex-col-reverse max-sm:grow max-sm:items-center max-sm:w-45 max-sm:h-fit">
+  <main class="flex flex-row justify-between rounded-lg w-main bg-cardbg max-sm:flex-col-reverse max-sm:grow max-sm:items-center max-sm:w-45 max-sm:h-fit">
     <!-- tem que fazer o object cover da img funcionar. Acredito que colocar a main para funcionar como uma grid ao invês de um flex pode ajudar. -->
     <section class="flex flex-col items-center ml-20 mr-20 text-white w-maxh1 max-sm:w-710 max-sm:text-center max-sm:m-0 max-lg2:ml-10 max-lg2:mr-10">
       <h1 class="w-full mt-10 mb-10 text-4xl font-bold max-w-maxh1 max-sm:w-710 max-sm:text-2xl max-sm:mb-5">Get <span class="text-accent">insights</span> that help your business grow.</h1>
@@ -39,9 +39,12 @@
       
     </section>
 
-      <div class="">
-        <img class="object-cover rounded-r-lg max-sm:rounded-br-none max-sm:rounded-t-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
-      </div>
+        <div class="relative w-wimg overflow-hidden max-sm:rounded-t-lg after:content-[''] after:absolute after:bg-accent after:w-full after:h-full after:opacity-50 after:rounded-r-lg">
+          <picture class="absolute inset-0 w-full h-full rounded-r-lg bsolute max-sm:rounded-t-lg">
+            <source media="(max-width: 640px)" srcset="../images/image-header-mobile.jpg">
+            <img class="object-cover w-full h-full" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+          </picture>
+        </div>
 
   </main>
 
