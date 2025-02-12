@@ -21,7 +21,8 @@
 </head>
 <body class="flex flex-col items-center justify-center overflow-y-auto bg-mainbg text-main"> 
 
-  <main class="flex flex-row rounded-lg bg-cardbg max-sm:flex-col-reverse max-sm:gorw max-sm:items-center max-sm:w-45 max-sm:h-fit"> <!--Precisa de uma feixa de transição entre 910px e 640px (não tenho nenhuma ideia de desing e não sei como fazer isso caber)-->
+  <main class="flex flex-row justify-between rounded-lg bg-cardbg max-sm:flex-col-reverse max-sm:grow max-sm:items-center max-sm:w-45 max-sm:h-fit">
+    <!-- tem que fazer o object cover da img funcionar. Acredito que colocar a main para funcionar como uma grid ao invês de um flex pode ajudar. -->
     <section class="flex flex-col items-center ml-20 mr-20 text-white w-maxh1 max-sm:w-710 max-sm:text-center max-sm:m-0 max-lg2:ml-10 max-lg2:mr-10">
       <h1 class="w-full mt-10 mb-10 text-4xl font-bold max-w-maxh1 max-sm:w-710 max-sm:text-2xl max-sm:mb-5">Get <span class="text-accent">insights</span> that help your business grow.</h1>
       <p class="w-full mb-20 text-base max-w-maxp text-mainp max-sm:mb-10 max-sm:max-w-full ">
@@ -31,13 +32,17 @@
 
       <!-- Stats bar -->
       <section class="container flex flex-row justify-around text-2xl font-bold leading-7 max-sm:flex-col max-sm:mb-7">
-        <div class="mb-7 max-sm:leading-6">10k+<br><span class="text-sm font-normal text-statheading font-beca max-sm:text-xs">COMPANIES</span></div>
-        <div class="mb-7 max-sm:leading-6">314<br><span class="text-sm font-normal text-statheading font-beca max-sm:text-xs">TEMPLATES</span></div>
+        <div class="max-sm:leading-6">10k+<br><span class="text-sm font-normal text-statheading font-beca max-sm:text-xs max-sm:mb-7">COMPANIES</span></div>
+        <div class="max-sm:leading-6">314<br><span class="text-sm font-normal text-statheading font-beca max-sm:text-xs max-sm:mb-7">TEMPLATES</span></div>
         <div class="max-sm:leading-6">12M+<br><span class="text-sm font-normal text-statheading font-beca max-sm:text-xs">QUERIES</span></div>
       </section>
       
     </section>
-      <img class="rounded-r-lg max-sm:rounded-br-none max-sm:rounded-t-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+
+      <div class="">
+        <img class="object-cover rounded-r-lg max-sm:rounded-br-none max-sm:rounded-t-lg" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+      </div>
+
   </main>
 
   <footer class="attribution">
