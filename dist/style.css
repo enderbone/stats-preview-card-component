@@ -1497,6 +1497,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
   .bg-cardbg {
     background-color: var(--color-cardbg);
   }
@@ -2474,6 +2477,11 @@
       margin-bottom: calc(var(--spacing) * 10);
     }
   }
+  .max-sm\:h-64 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 64);
+    }
+  }
   .max-sm\:h-fit {
     @media (width < 40rem) {
       height: fit-content;
@@ -2487,6 +2495,11 @@
   .max-sm\:w-710 {
     @media (width < 40rem) {
       width: var(--spacing-710);
+    }
+  }
+  .max-sm\:w-full {
+    @media (width < 40rem) {
+      width: 100%;
     }
   }
   .max-sm\:max-w-full {

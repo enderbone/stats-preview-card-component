@@ -39,12 +39,17 @@
       
     </section>
 
-        <div class="relative w-wimg overflow-hidden max-sm:rounded-t-lg after:content-[''] after:absolute after:bg-accent after:w-full after:h-full after:opacity-50 after:rounded-r-lg">
-          <picture class="absolute inset-0 w-full h-full rounded-r-lg bsolute max-sm:rounded-t-lg">
-            <source media="(max-width: 640px)" srcset="../images/image-header-mobile.jpg">
-            <img class="object-cover w-full h-full" src="../images/image-header-desktop.jpg" alt="image-header-desktop">
-          </picture>
-        </div>
+    <div class="relative h-full overflow-hidden w-wimg max-sm:w-full max-sm:h-64">
+      <picture class="block w-full h-full">
+        <!-- Imagem para mobile -->
+        <source media="(max-width: 640px)" srcset="../images/image-header-mobile.jpg">
+        <!-- Imagem padrão para desktop -->
+        <img class="object-cover w-full h-full" src="../images/image-header-desktop.jpg" alt="Imagem de destaque">
+      </picture>
+    
+      <!-- Camada de sobreposição -->
+      <div class="absolute inset-0 rounded-r-lg opacity-50 bg-accent max-sm:rounded-t-lg"></div>
+    </div>
 
   </main>
 
